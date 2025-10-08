@@ -6,7 +6,7 @@
       <div class="d-flex justify-content-center">
         <a href="home" class="navbar-brand">
           <img
-            src="Views/sources/img/identidadcorporativa/LOGO_DANLEY-TECHNOLOGY.png"
+            src="Views\sources\img\indentidadcorporativa\LOGO_DANLEY-TECHNOLOGY.png"
             alt=""
             class="brand-image img-fluid py-3 px-5 p-lg-0 pe-lg-3"
           >
