@@ -31,9 +31,9 @@
   include "views/modules/top.php";
   include "views/modules/navbar.php";
   include "views/modules/aside.php";
-  include "views/modules/footer.php";
   // include "views/modules/control-sidebar.php";
   include "views/pages/home/home.php";
+  include "views/modules/footer.php";
   include "views/modules/modals.php";
   
   ?>
