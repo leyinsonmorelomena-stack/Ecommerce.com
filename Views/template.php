@@ -22,7 +22,7 @@
 
   <!-- Theme style -->
   <link rel="stylesheet" href="views/sources/adminlte/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="views/sources/css/style.css">
+  <link rel="stylesheet" href="views/sources/css/estilo.css">
 </head>
 <body class="hold-transition sidebar-collapse layout-top-nav">
 <div class="wrapper">
@@ -57,6 +57,9 @@
 
 <!-- AdminLTE App -->
 <script src="views/sources/adminlte/dist/js/adminlte.min.js"></script>
+
+<!-- Slider -->
+<script src="Views\sources\js\slide.js"></script>
 
 </body>
 </html>

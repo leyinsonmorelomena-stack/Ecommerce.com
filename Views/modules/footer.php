@@ -3,173 +3,163 @@
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
 
     <!-- primera columna -->
-    <div class="col row">
-      <div class="col-12 col-sm-4 col-md-3 col-lg-4">
-        <h4 class="lead">
+<div class="col row">
+  <!-- 🔌 Accesorios de Computo -->
+  <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+    <h4 class="lead">
+      <a href="#" class="text-uppercase"></a>Accesorios de Cómputo
+    </h4>
 
-          <a href="#" class="text-uppercase"></a>
-        </h4>
+    <hr class="border-white">
 
-        <hr class="border-white">
+    <ul>
+      <li>
+        <a href="#">-Teclados mecánicos e inalámbricos</a>
+      </li>
 
-        <ul>
+      <li>
+        <a href="#">-Mouse ergonómicos / gamer / inalámbricos</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Alfombrillas con carga inalámbrica</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Monitores adicionales (curvos, 4K, etc.)</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Docking stations / hubs USB-C</a>
+      </li>
+    </ul>
+  </div>
 
-        <li>
-          <a href="#"></a>
-        </li>
+  <!-- 📱 Accesorios para Dispositivos Móviles -->
+  <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+    <h4 class="lead">
+      <a href="#" class="text-uppercase"></a>Accesorios para Dispositivos Móviles
+    </h4>
 
-        <li>
-          <a href="#"></a>
-        </li>
+    <hr class="border-white">
 
-        </ul>
-      </div>
+    <ul>
+      <li>
+        <a href="#">-Fundas protectoras para celulares y tablets</a>
+      </li>
 
-        <div class="col-12 col-sm-4 col-md-3 col-lg-4">
-        <h4 class="lead">
+      <li>
+        <a href="#">Vidrios templados</a>
+      </li>
 
-          <a href="#" class="text-uppercase"></a>
-        </h4>
+      <li>
+        <a href="#">-Cargadores rápidos y cables</a>
+      </li>
 
-        <hr class="border-white">
+      <li>
+        <a href="#">-Power banks / baterías externas</a>
+      </li>
 
-        <ul>
+      <li>
+        <a href="#">-Cargadores inalámbricos</a>
+      </li>
+    </ul>
+  </div>
 
-        <li>
-          <a href="#"></a>
-        </li>
+  <!-- 🎧 Audio y Multimedia -->
+  <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+    <h4 class="lead">
+      <a href="#" class="text-uppercase"></a>Audio y Multimedia
+    </h4>
 
-        <li>
-          <a href="#"></a>
-        </li>
+    <hr class="border-white">
 
-        <li>
-          <a href="#"></a>
-        </li>
+    <ul>
+      <li>
+        <a href="#">-Bocinas Bluetooth</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Audífonos inalámbricos (AirPods, over-ear, in-ear)</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Micrófonos de condensador / streaming</a>
+      </li>
 
-        </ul>
-      </div>
+      <li>
+        <a href="#">-Interfaces de audio USB</a>
+      </li>
 
-      <div class="col-12 col-sm-4 col-md-3 col-lg-4">
-        <h4 class="lead">
+      <li>
+        <a href="#">-Luces LED RGB para setup</a>
+      </li>
+    </ul>
+  </div>
 
-          <a href="#" class="text-uppercase"></a>
-        </h4>
+  <!-- 📡 Conectividad y Redes -->
+  <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+    <h4 class="lead">
+      <a href="#" class="text-uppercase"></a>Conectividad y Redes
+    </h4>
 
-        <hr class="border-white">
+    <hr class="border-white">
 
-        <ul>
+    <ul>
+      <li>
+        <a href="#">-Routers y repetidores WiFi</a>
+      </li>
+  
+      <li>
+        <a href="#">-Switches de red</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Adaptadores de red USB</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Antenas WiFi</a>
+      </li>
 
-        <li>
-          <a href="#"></a>
-        </li>
+      <li>
+        <a href="#">-Discos duros externos y SSDs portátiles</a>
+      </li>
+    </ul>
+  </div>
 
-        <li>
-          <a href="#"></a>
-        </li>
+  <!-- 🖥️ Accesorios de Oficina Tecnológica -->
+  <div class="col-12 col-sm-4 col-md-3 col-lg-4">
+    <h4 class="lead">
+      <a href="#" class="text-uppercase"></a>Accesorios de Oficina Tecnológica
+    </h4>
 
-        <li>
-          <a href="#"></a>
-        </li>
+    <hr class="border-white">
 
-        </ul>
-      </div>
+    <ul>
+      <li>
+        <a href="#">-Sillas ergonómicas gamer/office</a>
+      </li>
 
-      <div class="col-12 col-sm-4 col-md-3 col-lg-4">
-        <h4 class="lead">
+      <li>
+        <a href="#">-Bases refrigerantes para laptops</a>
+      </li>
 
-          <a href="#" class="text-uppercase"></a>
-        </h4>
+      <li>
+        <a href="#">-Organizadores de cables</a>
+      </li>
 
-        <hr class="border-white">
+      <li>
+        <a href="#">-Estaciones de carga múltiples</a>
+      </li>
 
-        <ul>
+      <li>
+        <a href="#">-Proyectores portátiles</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        </ul>
-      </div>
-
-      <div class="col-12 col-sm-4 col-md-3 col-lg-4">
-        <h4 class="lead">
-
-          <a href="#" class="text-uppercase"></a>
-        </h4>
-
-        <hr class="border-white">
-
-        <ul>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        <li>
-          <a href=""></a>
-        </li>
-
-        <li>
-          <a href="#"></a>
-        </li>
-
-        </ul>
-      
-      </div>
-    </div>
 
     <!-- segundo columna -->
      <div class="col my-3 my-lg-0 px-lg-5 text-light">

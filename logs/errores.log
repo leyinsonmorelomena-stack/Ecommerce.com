@@ -1,0 +1,2 @@
+[08-Oct-2025 16:05:13 Europe/Berlin] PHP Warning:  include(partials/banner.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 3
+[08-Oct-2025 16:05:13 Europe/Berlin] PHP Warning:  include(): Failed opening 'partials/banner.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 3
