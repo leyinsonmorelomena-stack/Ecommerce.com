@@ -8,9 +8,7 @@
 
     $directorio = 'logs';
 
-   
     if (!is_dir($directorio)) {
-
         mkdir($directorio, 0775, true);
 
     }
