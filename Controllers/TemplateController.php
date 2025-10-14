@@ -1,5 +1,7 @@
 <?php
+
 class TemplateController{
+
     public function showTemplate(){
         include "views/template.php";
     }
@@ -10,8 +12,8 @@ class TemplateController{
         }else {
             return "http://" . $_SERVER["SERVER_NAME"] . "/";
         }
-        return $_SERVER["SERVER_NAME"];
-    }
 
+    }
+    
 }
 

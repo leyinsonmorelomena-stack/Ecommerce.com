@@ -1,66 +1,106 @@
-
 <?php
-  $path = TemplateController::path();
+/*===================================
+=            Capturar dominio        =
+===================================*/
 
-  // echo '<pre>';print_r($path);echo '</pre>';
+$path = TemplateController::path();
+// echo '<pre>';print_r($path);echo '</pre>';
+
+/*===================================
+=            Capturar rutas de la URL =
+===================================*/
+
+$ruta = $_SERVER['REQUEST_URI'];
+// echo '<pre>';print_r($ruta);echo '</pre>';
+
+$arrayRutas = explode("/", $ruta);
+array_shift($arrayRutas);
+
+// echo '<pre>';print_r($arrayRutas);echo '</pre>';
+
+foreach ($arrayRutas as $key => $value) {
+    $arrayRutas[$key] = explode("?", $value)[0];
+}
+
+echo '<pre>';print_r($arrayRutas);echo '</pre>';
 ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Top Navigation + Sidebar</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <!-- Google Font: Source Sans Pro -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="views/sources/adminlte/plugins/fontawesome-free/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Top Navigation + Sidebar</title>
 
-  <link rel="stylesheet" href="Views/sources/plugins/jdSlider/jdSlider.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" 
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
 
-  <!-- Theme style -->
-  <link rel="stylesheet" href="views/sources/adminlte/dist/css/adminlte.min.css">
-  <link rel="stylesheet" href="views/sources/css/estilo.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+          crossorigin="anonymous">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="<?=$path?>Views/sources/adminlte/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- jdSlider -->
+    <link rel="stylesheet" href="<?=$path?>Views/sources/plugins/jdSlider/jdSlider.css">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="<?=$path?>Views/sources/adminlte/dist/css/adminlte.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="<?=$path?>Views/sources/css/estilo.css">
 </head>
+
 <body class="hold-transition sidebar-collapse layout-top-nav">
-<div class="wrapper">
+    <div class="wrapper">
 
-<?php
-  include "views/modules/top.php";
-  include "views/modules/navbar.php";
-  include "views/modules/aside.php";
-  // include "views/modules/control-sidebar.php";
-  include "views/pages/home/home.php";
-  include "views/modules/footer.php";
-  include "views/modules/modals.php";
-  
-  ?>
+        <?php
+        include "Views/modules/top.php";
+        include "Views/modules/navbar.php";
 
-  
+        if (isset($_SESSION['admin'])) {
+            include "Views/modules/aside.php";
+        }
 
- 
+        if ($arrayRutas[0] == "admin") {
+            include "pages/" . $arrayRutas[0] . "/" . $arrayRutas[0] . ".php";
+        } else {
+            include "Views/pages/home/home.php";
+        }
 
-<!-- REQUIRED SCRIPTS -->
+        // include "Views/modules/sidebar-control.php";
+        include "Views/modules/footer.php";
+        include "Views/modules/modals.php";
+        ?>
 
-<!-- jQuery -->
-<script src="views/sources/adminlte/plugins/jquery/jquery.min.js"></script>
+    </div>
+    <!-- ./wrapper -->
 
-<!-- Bootstrap 4 -->
-<script src="views/sources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- REQUIRED SCRIPTS -->
 
-<!-- bootstrap 5 -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="Views/sources/adminlte/plugins/jquery/jquery.min.js"></script>
 
- <script src="Views/sources/plugins/jdSlider/jdSlider.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Views/sources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- AdminLTE App -->
-<script src="views/sources/adminlte/dist/js/adminlte.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-<!-- Script Propios  -->
-<script src="Views/sources/js/slide.js"></script>
-<script src="Views/sources/js/products.js"></script>
+    <!-- jdSlider -->
+    <script src="<?=$path?>Views/sources/plugins/jdSlider/jdSlider.js"></script>
+
+    <!-- AdminLTE App -->
+    <script src="<?=$path?>Views/sources/adminlte/dist/js/adminlte.min.js"></script>
+
+    <!-- Scripts propios -->
+    <script src="<?=$path?>Views/sources/js/slide.js"></script>
+    <script src="<?=$path?>Views/sources/js/products.js"></script>
 
 </body>
 </html>

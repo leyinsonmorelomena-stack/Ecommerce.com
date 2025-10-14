@@ -1,15 +1,10 @@
 <div class="jd-slider">
-
     <div class="slide-inner">
-
         <ul class="slide-area">
-
             <li>
-                <img src="views/sources/img/slide/1/back_default.jpg" class="img-fluid">
-
+                <img src="Views/sources/img/slide/1/Lo-Nuevo.jpg" class="img-fluid">
                 <div class="slideOpt opt1">
-                    <img src="views/sources/img/slide/1/calzado.png" style="top:15%; right:10%; width:45%">
-
+                    
                     <div class="slideText" style="top:20%; left:10%; width:40%">
                         <h1 class="text-uppercase" style="color: #333">Lorem Ipsum</h1>
                         <h2 class="text-uppercase" style="color: #777">Lorem ipsum dolor sit</h2>

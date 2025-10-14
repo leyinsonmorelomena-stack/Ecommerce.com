@@ -1,10 +1,10 @@
-<!-- <div class="container-fluid banner" style="position:relative; background: url('Views/sources/img/banner/1/default.jpg'); background-size:cover,background-position:center; background-repeat:no-repeat">
+<!-- <div class="container-fluid banner" style="position:relative; background: url('Views/sources/img/banner/1/default.png'); background-size:cover,background-position:center; background-repeat:no-repeat">
 
 
 
 </div> -->
 
-<div class="container-fluid banner" style="position:relative; background: url('Views/sources/img/banner/1/default.jpg') center center / cover no-repeat fixed;">
+<div class="container-fluid banner" style="position:relative; background: url('Views/sources/img/banner/1/default.png') center center / cover no-repeat fixed;">
 
     <div class="container-fluid" style="background-color rgba(0,0,0,.5)">
 

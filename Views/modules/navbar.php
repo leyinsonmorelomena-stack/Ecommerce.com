@@ -1,10 +1,8 @@
 <style>
-/* 🎨 Azul corporativo de DANLEY */
 :root {
-  --danley-blue: #007BFF; /* Cambia este valor si tu logo usa otro tono exacto */
+  --danley-blue: #007BFF; 
 }
 
-/* Aplica el color a los elementos con fondo info */
 .bg-info,
 .input-group-append.bg-info,
 .btn.bg-info {
@@ -12,14 +10,12 @@
   border-color: var(--danley-blue) !important;
 }
 
-/* Íconos dentro de los cuadros */
 .bg-info i,
 .input-group-append.bg-info i,
 .btn.bg-info i {
   color: #ffffff !important;
 }
 
-/* Efecto hover para coherencia */
 .bg-info:hover,
 .btn.bg-info:hover,
 .input-group-append.bg-info:hover {
@@ -31,7 +27,6 @@
 <div class="container py-2 py-lg-4">
   <div class="row">
 
-    <!-- LOGO -->
     <div class="col-12 col-lg-2 mt-1">
       <div class="d-flex justify-content-center">
         <a href="home" class="navbar-brand">
@@ -44,11 +39,13 @@
       </div>
     </div>
 
-    <!-- MENÚ Y BUSCADOR -->
     <div class="col-12 col-lg-7 col-xl-8 mt-1 px-3 px-lg-0">
-      <a href="#" data-widget="pushmenu" role="button" class="nav-link float-start">
-        <i class="fas fa-bars"></i>
-      </a>
+
+      <?php if(isset($_SESSION['admin'])):?>
+
+      <a href="/" data-widget="pushmenu" role="button" class="nav-link float-start"><i class="fas fa-bars"></i></a>
+
+      <?php endif;?>
 
       <!-- CATEGORÍAS -->
       <div class="dropdown px-1 float-start bg-info">
