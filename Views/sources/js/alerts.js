@@ -15,17 +15,17 @@ function formatearCamposFormulario(){
 
 function sweetAlert(titulo,text,icono,url = null){
 
-    if(url){
+    if(!url){
         Swal.fire({
-            title: "Good job!",
-            text: "You clicked the button!",
-            icon: "success"
+            title: titulo,
+            text: text,
+            icon: icono
         });
     }else{
         Swal.fire({
-          title: "Are you sure?",
-          text: "You won't be able to revert this!",
-          icon: "warning",
+          title: titulo,
+            text: text,
+            icon: icono,
           showCancelButton: true,
           confirmButtonColor: "#3085d6",
           cancelButtonColor: "#d33",
@@ -33,9 +33,9 @@ function sweetAlert(titulo,text,icono,url = null){
         }).then((result) => {
           if (result.isConfirmed) {
             Swal.fire({
-              title: "Deleted!",
-              text: "Your file has been deleted.",
-              icon: "success"
+              title: titulo,
+            text: text,
+            icon: icono
             });
           }
         });
