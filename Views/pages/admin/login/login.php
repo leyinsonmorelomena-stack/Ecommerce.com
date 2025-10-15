@@ -16,8 +16,14 @@
         if(!empty($mensaje)){
           echo '
           <div class="alert alert-warning text-center md-3" role="alert">'.$mensaje.'</div>
+          
+              <script>
+                  formatearCamposFomulario()
+                  sweetAlert("Atención","'.$mensaje.'","warning");
+              </script>
           ';
         }
+
       ?>
 
 

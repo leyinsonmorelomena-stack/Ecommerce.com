@@ -45,24 +45,31 @@ function validarJs(campo, tipoValidacion) {
     }
   }
 
-  /*
+  
   if (tipoValidacion === "password") {
 
-    let patron = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+  // Expresión regular:
+  // (?=.*[a-z])      → al menos una minúscula
+  // (?=.*[A-Z])      → al menos una mayúscula
+  // (?=.*\d)         → al menos un número
+  // (?=.*[@#!\-*])   → al menos un carácter especial del conjunto indicado
+  // [A-Za-z\d@#!\-*]{8,} → mínimo 8 caracteres permitidos
+  let patron = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#!\-*])[A-Za-z\d@#!\-*]{8,}$/;
 
-    if (!patron.test((campo.target.value || '').trim())) {
+  const valor = (campo.target.value || '').trim();
 
-      $(campo.target).parent().addClass("was-validated");
-      $(campo.target)
-        .parent()
-        .children(".invalid-feedback")
-        .text("La contraseña debe tener al menos 8 caracteres y un número");
-
-      return;
-    } else {
-      $(campo.target).parent().removeClass("was-validated");
-      $(campo.target).parent().children(".invalid-feedback").text("");
-    }
+  if (!patron.test(valor)) {
+    $(campo.target).parent().addClass("was-validated");
+    $(campo.target)
+      .parent()
+      .children(".invalid-feedback")
+      .text("La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula, un número y un carácter especial (@#!-*).");
+    return;
+  } else {
+    $(campo.target).parent().removeClass("was-validated");
+    $(campo.target).parent().children(".invalid-feedback").text("");
   }
-  */
+}
+
+
 }
