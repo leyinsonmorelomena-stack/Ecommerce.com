@@ -7,23 +7,47 @@
     </div>
     <div class="card-body">
 
-      <form action="../../index3.html" method="post">
+      <?php
+        require_once "Controllers/AdminsController.php";
+        $controller = new AdminsController();
+        $mensaje = $controller->login();
+
+        //mostrar mensaje de error si existe
+        if(!empty($mensaje)){
+          echo '
+          <div class="alert alert-warning text-center md-3" role="alert">'.$mensaje.'</div>
+          ';
+        }
+      ?>
+
+
+      <form method="post" class="needs-validation" novalidate>
+        <!-- Campo email -->
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email">
+          <input type="email" class="form-control" placeholder="Email" name="emailAdmin" onchange="validarJs(event, 'email')" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
             </div>
           </div>
-        </div>
+
+          <div class="valid-feedback">Válido.</div>
+            <div class="invalid-feedback">Campo inválido.</div>
+          </div>
+
+           <!-- Campo password -->
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Password">
+          <input type="password" class="form-control" placeholder="Password" name="passwordAdmin" onchange="validarJs(event, 'password')" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
-        </div>
+
+          <div class="valid-feedback">Válido.</div>
+            <div class="invalid-feedback">Campo inválido.</div>
+          </div>
+
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
@@ -46,16 +70,16 @@
           <i class="fab fa-facebook mr-2"></i> Sign in using Facebook
         </a>
         <a href="#" class="btn btn-block btn-danger">
-          <i class="fab fa-google mr-2"></i> Sign in using Google
+          <i class="fab fa-google-plus mr-2"></i> Sign in using Google+
         </a>
       </div> -->
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html">Recuperar mi contraseña</a>
+        <a href="forgot-password.html">Recuperar Contraseña</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Registrate</a>
+        <a href="register.html" class="text-center">Registrarse</a>
       </p>
     </div>
     <!-- /.card-body -->
@@ -63,5 +87,6 @@
   <!-- /.card -->
 </div>
 <!-- /.login-box -->
+
 
 </div>

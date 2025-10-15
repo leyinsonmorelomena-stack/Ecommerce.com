@@ -1,169 +1,18 @@
-[08-Oct-2025 16:05:13 Europe/Berlin] PHP Warning:  include(partials/banner.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 3
-[08-Oct-2025 16:05:13 Europe/Berlin] PHP Warning:  include(): Failed opening 'partials/banner.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 3
-[09-Oct-2025 22:17:48 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "include" in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 6
-[09-Oct-2025 22:17:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "include" in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 6
-[09-Oct-2025 22:17:56 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "include" in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 6
-[09-Oct-2025 22:18:05 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "include" in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 6
-[09-Oct-2025 22:18:07 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "include" in C:\xampp\htdocs\Ecommerce\Views\pages\home\home.php on line 6
-[14-Oct-2025 21:41:09 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:41:09 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:44:34 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:44:34 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:52:07 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:52:07 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:56:54 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:56:54 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:59:16 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:59:16 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:59:50 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 21:59:50 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:08:34 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:08:34 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:15:10 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:15:10 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:15:28 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:15:28 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:17:19 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:17:19 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:18:29 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:18:29 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:18:30 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:18:30 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:19:29 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:19:29 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:19:30 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:19:30 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:04 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:04 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:04 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:04 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:17 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:17 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:18 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:18 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:33 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:33 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:34 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:34 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:36 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:36 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:36 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:28:36 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:31:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:31:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:31:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:31:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:48 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:48 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:48 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:34:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:35:23 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:35:23 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:35:23 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:35:23 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:36:10 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:36:10 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:36:10 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:36:10 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:39 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:39 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:42 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:42 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:42 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:42 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:44 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:44 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:44 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:44 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:45 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:45 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:45 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:45 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:54 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:54 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:54 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:49:54 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:50:02 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:50:02 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:50:03 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:50:03 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:39 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:39 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:40 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:40 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:42 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:42 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:42 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:42 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:49 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:49 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:50 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:50 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:50 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:54:50 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:24 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:24 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:24 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:24 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:28 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:28 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:29 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 22:56:29 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:24 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:24 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:24 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:25 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:25 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:25 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:26 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined variable $rutas in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\ecommerce\Views\template.php on line 15
-[14-Oct-2025 23:01:27 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\ecommerce\Views\template.php on line 59
+[15-Oct-2025 17:20:47 Europe/Berlin] PHP Warning:  Undefined variable $controller in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php on line 13
+[15-Oct-2025 17:20:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function login() on null in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(4): include()
+#1 C:\xampp\htdocs\ecommerce\Views\template.php(71): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\index.php(22): TemplateController->showTemplate()
+#4 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php on line 13
+[15-Oct-2025 17:20:47 Europe/Berlin] PHP Warning:  Undefined variable $controller in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php on line 13
+[15-Oct-2025 17:20:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function login() on null in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(4): include()
+#1 C:\xampp\htdocs\ecommerce\Views\template.php(71): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\index.php(22): TemplateController->showTemplate()
+#4 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\login\login.php on line 13

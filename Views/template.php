@@ -84,10 +84,10 @@ echo '<pre>';print_r($arrayRutas);echo '</pre>';
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="Views/sources/adminlte/plugins/jquery/jquery.min.js"></script>
+    <script src="<?=$path?>Views/sources/adminlte/plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap 4 -->
-    <script src="Views/sources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=$path?>Views/sources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -101,6 +101,7 @@ echo '<pre>';print_r($arrayRutas);echo '</pre>';
     <!-- Scripts propios -->
     <script src="<?=$path?>Views/sources/js/slide.js"></script>
     <script src="<?=$path?>Views/sources/js/products.js"></script>
+    <script src="<?=$path?>Views/sources/js/forms.js"></script>
 
 </body>
 </html>
