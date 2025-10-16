@@ -73,3 +73,42 @@ function validarJs(campo, tipoValidacion) {
 
 
 }
+
+/*------------------------------------------------------
+              Recordar email en el login
+------------------------------------------------------*/
+function recordarEmail(event) {
+
+  const emailInput = document.querySelector('[name=emailAdmin]');
+  const rememberCheckbox = event.target;
+
+  if (rememberCheckbox.checked) {
+    // Guardamos el email y el estado del checkbox
+    localStorage.setItem("emailAdmin", emailInput.value.trim());
+    localStorage.setItem("checked", "true");
+  } else {
+    localStorage.removeItem("emailAdmin");
+    localStorage.removeItem("checked");
+  }
+
+}
+
+/*------------------------------------------------------
+              Recuperar email en el login
+------------------------------------------------------*/
+function getEmail() {
+
+  const emailStored = localStorage.getItem("emailAdmin");
+  const rememberState = localStorage.getItem("checked");
+
+  if (emailStored) {
+    document.querySelector('[name=emailAdmin]').value = emailStored;
+  }
+
+  if (rememberState) {
+    document.querySelector('#remember').checked = true;
+  }
+
+}
+
+getEmail();

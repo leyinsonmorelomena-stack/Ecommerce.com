@@ -22,7 +22,7 @@ foreach ($arrayRutas as $key => $value) {
     $arrayRutas[$key] = explode("?", $value)[0];
 }
 
-echo '<pre>';print_r($arrayRutas);echo '</pre>';
+// echo '<pre>';print_r($arrayRutas);echo '</pre>';
 ?>
 
 <!DOCTYPE html>
@@ -79,8 +79,11 @@ echo '<pre>';print_r($arrayRutas);echo '</pre>';
             include "Views/modules/aside.php";
         }
 
-        if ($arrayRutas[0] == "admin") {
-            include "pages/" . $arrayRutas[0] . "/" . $arrayRutas[0] . ".php";
+        if(
+            $arrayRutas[0] == "admin" ||
+            $arrayRutas[0] == "salir"
+        ){
+            include "pages/".$arrayRutas[0]."/".$arrayRutas[0].".php";
         } else {
             include "Views/pages/home/home.php";
         }

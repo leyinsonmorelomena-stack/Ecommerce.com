@@ -15,12 +15,12 @@
 
 ini_set('error_log', $directorio . '/errores.log');
 
-//Iniciar Sesión
+// iniciar Sesión
 if(session_status() !== PHP_SESSION_ACTIVE){            
     session_start();
 }
 
-
+// requerir controladores
 require_once "Controllers/TemplateController.php";
 
 $template = new TemplateController();

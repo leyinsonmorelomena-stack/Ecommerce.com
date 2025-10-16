@@ -40,11 +40,11 @@ class AdminsController
 
             //Buscar administrador en la base de datos si pasa todas las validaciones
 
-            $adminModal = new AdminsModel();
-            $admin = $adminModal->findByEmail($email);
+            $adminModel = new AdminsModel();
+            $admin = $adminModel->findByEmail($email);
 
             // var_dump($admin);
-            // echo '<pre>';print_r($arrayRutas);echo '</pre>';
+            // echo '<pre>';print_r($admin);echo '</pre>';
             // return;
 
              if(!$admin){
@@ -56,7 +56,7 @@ class AdminsController
             //     return 'Contraseña incorrecta'
             //  }
 
-            if(!$password !== $admin['password_password_administrador']){
+            if($password !== $admin['password_administrador']){
                 return 'Contraseña incorrecta';
             }
 

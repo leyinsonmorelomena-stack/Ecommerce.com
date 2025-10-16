@@ -18,7 +18,7 @@
           <div class="alert alert-warning text-center md-3" role="alert">'.$mensaje.'</div>
           
               <script>
-                  formatearCamposFomulario()
+                  formatearCamposFomulario();
                   sweetAlert("Atención","'.$mensaje.'","warning");
               </script>
           ';
@@ -57,7 +57,7 @@
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
-              <input type="checkbox" id="remember">
+              <input type="checkbox" id="remember" onchange="recordarEmail(event)">
               <label for="remember">
                 Recordar Usuario
               </label>
