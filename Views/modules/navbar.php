@@ -1,3 +1,28 @@
+<style>
+:root {
+  --danley-blue: #007BFF; 
+}
+
+.bg-info,
+.input-group-append.bg-info,
+.btn.bg-info {
+  background-color: var(--danley-blue) !important;
+  border-color: var(--danley-blue) !important;
+}
+
+.bg-info i,
+.input-group-append.bg-info i,
+.btn.bg-info i {
+  color: #ffffff !important;
+}
+
+.bg-info:hover,
+.btn.bg-info:hover,
+.input-group-append.bg-info:hover {
+  background-color: #005fcc !important;
+}
+</style>
+
 
 <div class="container py-2 py-lg-4">
   <div class="row">

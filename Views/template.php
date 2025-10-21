@@ -53,7 +53,7 @@ foreach ($arrayRutas as $key => $value) {
     <link rel="stylesheet" href="<?=$path?>Views/sources/adminlte/dist/css/adminlte.min.css">
 
     <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="<?=$path?>Views/sources/css/estilo.css">
+    <link rel="stylesheet" href="<?=$path?>Views/sources/css/style.css">
 
     <!-- jQuery -->
     <script src="<?=$path?>Views/sources/adminlte/plugins/jquery/jquery.min.js"></script>
