@@ -47,12 +47,30 @@
           role="menu" 
           data-accordion="false">
 
+          <!-- Administradores -->
+        <li class="nav-item">
+          <a href="/admin/administradores" class="nav-link active">
+            <i class="nav-icon fas fa-user-shield"></i>
+            <p>
+              Administradores
+            </p>
+          </a>
+
         <!-- Dashboard -->
         <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+          <a href="/admin/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-chart-line"></i>
             <p>
               Dashboard
+            </p>
+          </a>
+
+        <!-- Productos -->
+        <li class="nav-item">
+          <a href="/admin/productos" class="nav-link">
+            <i class="nav-icon fas fa-boxes"></i>
+            <p>
+              Productos
               <i class="right fas fa-angle-left"></i>
             </p>
           </a>
@@ -61,23 +79,70 @@
             <li class="nav-item">
               <a href="views/sources/adminlte/index.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v1</p>
+                <p>Categorías</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="views/sources/adminlte/index2.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v2</p>
+                <p>Subcategorías</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="views/sources/adminlte/index3.html" class="nav-link">
                 <i class="far fa-circle nav-icon"></i>
-                <p>Dashboard v3</p>
+                <p>Inventario</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="views/sources/adminlte/index4.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Mensajes</p>
               </a>
             </li>
           </ul>
         </li>
+
+         <!-- Ventas -->
+        <li class="nav-item">
+          <a href="/admin/ventas" class="nav-link">
+            <i class="nav-icon fas fa-shopping-cart"></i>
+            <p>
+              Ventas
+              <i class="right fas fa-angle-left"></i>
+            </p>
+          </a>
+
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="views/sources/adminlte/index.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pedidos</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="views/sources/adminlte/index2.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Informes</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="views/sources/adminlte/index3.html" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Disputas</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+         <!-- Clientes -->
+        <li class="nav-item">
+          <a href="/admin/clientes" class="nav-link">
+            <i class="nav-icon fas fa-users"></i>
+            <p>
+              Clientes
+            </p>
+          </a>
 
         <!-- Widgets -->
         <li class="nav-item">
