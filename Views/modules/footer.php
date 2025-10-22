@@ -49,7 +49,7 @@
       </li>
 
       <li>
-        <a href="#">Vidrios templados</a>
+        <a href="#">-Vidrios templados</a>
       </li>
 
       <li>

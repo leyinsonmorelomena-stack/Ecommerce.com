@@ -1,3 +1,41 @@
+/*VARIABLES*/
+
+:root{
+    --colorPrincipal: #007BFF;
+    --colorSecundario: #747474;
+    --colorAuxiliar: #ffffff;
+
+    
+
+    --colorPrincipalHover: #023266;
+}
+
+/*BACGROUND CORPORATIVOS O PERSONALIZADOS*/
+
+.bg-principal{
+    background: var(--colorPrincipal) !important;
+    color: var(--colorAuxiliar) !important;
+
+
+}
+
+.btn-danger{
+    background: var(--colorPrincipal)!important;
+    color: var(--colorAuxiliar)
+}
+
+/* BOTONES */
+
+.btn-principal{
+    background: var(--colorPrincipal) !important;
+    color: var(--colorAuxiliar) !important;
+}
+
+.btn-principal:hover{
+    background: var(--colorPrincipalHover) !important;
+    color: var(--colorAuxiliar) !important;
+}
+
 body{
     font-family: 'Ubuntu', sans-serif;
 }
@@ -341,15 +379,15 @@ footer
 =============================================*/
 
 a.templateColor{
-    color: #47BAC1;
+    color: #fff;
 }
 
 .footer li a{
-    color:#fff !important;
+    color:#007BFF !important;
 }
 
 .footer li a:hover{
-    color:#47BAC1 !important;
+    color:#fff !important;
 }
 
 

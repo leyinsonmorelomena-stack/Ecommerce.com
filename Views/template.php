@@ -24,10 +24,8 @@ foreach ($arrayRutas as $key => $value) {
 
 // echo '<pre>';print_r($arrayRutas);echo '</pre>';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,6 +44,11 @@ foreach ($arrayRutas as $key => $value) {
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="<?=$path?>Views/sources/adminlte/plugins/fontawesome-free/css/all.min.css">
 
+    <!-- DataTables -->
+    <link rel="stylesheet" href="<?=$path?>Views/sources/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=$path?>Views/sources/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?=$path?>Views/sources/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
     <!-- jdSlider -->
     <link rel="stylesheet" href="<?=$path?>Views/sources/plugins/jdSlider/jdSlider.css">
 
@@ -60,6 +63,20 @@ foreach ($arrayRutas as $key => $value) {
 
     <!-- Bootstrap 4 -->
     <script src="<?=$path?>Views/sources/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables  & Plugins -->
+    <script src="<?=$path?>Views/sources/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/jszip/jszip.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="<?=$path?>Views/sources/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
     <!-- Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -108,6 +125,7 @@ foreach ($arrayRutas as $key => $value) {
     <script src="<?=$path?>Views/sources/js/slide.js"></script>
     <script src="<?=$path?>Views/sources/js/products.js"></script>
     <script src="<?=$path?>Views/sources/js/forms.js"></script>
+    <script src="<?=$path?>Views/sources/js/tables.js"></script>
 
 </body>
 </html>

@@ -1,41 +1,10 @@
-<style>
-:root {
-  --danley-blue: #007BFF; 
-}
-
-.bg-info,
-.input-group-append.bg-info,
-.btn.bg-info {
-  background-color: var(--danley-blue) !important;
-  border-color: var(--danley-blue) !important;
-}
-
-.bg-info i,
-.input-group-append.bg-info i,
-.btn.bg-info i {
-  color: #ffffff !important;
-}
-
-.bg-info:hover,
-.btn.bg-info:hover,
-.input-group-append.bg-info:hover {
-  background-color: #005fcc !important;
-}
-</style>
-
-
 <div class="container py-2 py-lg-4">
   <div class="row">
 
     <div class="col-12 col-lg-2 mt-1">
       <div class="d-flex justify-content-center">
         <a href="home" class="navbar-brand">
-          <img
-            src="<?=$path?>Views\sources\img\indentidadcorporativa\LOGO_DANLEY-TECHNOLOGY.png"
-            alt=""
-            class="brand-image img-fluid py-3 px-5 p-lg-0 pe-lg-3"
-          >
-        </a>
+          <img src="<?=$path?>Views\sources\img\indentidadcorporativa\LOGO_DANLEY-TECHNOLOGY.png" alt="" class="brand-image img-fluid py-3 px-5 p-lg-0 pe-lg-3"></a>
       </div>
     </div>
 
@@ -48,7 +17,7 @@
       <?php endif;?>
 
       <!-- CATEGORÍAS -->
-      <div class="dropdown px-1 float-start bg-info">
+      <div class="dropdown px-1 float-start bg-primary">
         <a
           href="#"
           id="dropdownSubMenu1"
@@ -446,7 +415,7 @@
             placeholder="Buscar..."
             style="height:40px"
           >
-          <div class="input-group-append px-2 bg-info">
+          <div class="input-group-append px-2 bg-primary">
             <button class="btn btn-navbar text-white" type="submit">
               <i class="fas fa-search"></i>
             </button>
@@ -456,18 +425,19 @@
     </div>
 
     <!-- CARRITO -->
-    <div class="col-12 col-lg-3 col-xl-2 mt-1 px-3 pxlg-0">
-      <div class="my-2 my-lb-0 d-flex justify-content-center">
+    <div class="col-12 col-lg-3 col-xl-2 mt-1 px-3 px-lg-0">
+      <div class="my-2 my-lg-0 d-flex justify-content-center">
+        
         <a href="#">
-          <button class="btn btn-default float-start rounded-0 border-0 py-2 px-3 bg-info">
+          <button class="btn btn-default float-start rounded-0 border-0 py-2 px-3 bg-primary">
             <i class="fa fa-shopping-cart"></i>
           </button>
         </a>
 
         <div class="small border float-start ps-2 pe-5 w-100">
-          TU CESTA <span>0</span><br>
-          USD $ <span>0</span>
+          TU CESTA <span>0</span><br> USD $ <span>0</span>
         </div>
+
       </div>
     </div>
 
