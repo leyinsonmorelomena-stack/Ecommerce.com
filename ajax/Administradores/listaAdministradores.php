@@ -16,7 +16,7 @@ if(session_status() !== PHP_SESSION_ACTIVE){
 // Parámetros Datatables
 $draw           = (int)($_GET['draw'] ?? 1); //Datatables espera este valor
 
-if(empty($_SESSION['id_admin'])){
+if(empty($_SESSION['admin'])){
     if(session_status() === PHP_SESSION_ACTIVE){
         $_SESSION = [];
         session_destroy();
@@ -58,14 +58,20 @@ $respuesta = AdminsModel::getDataTable([
 $data = [];
 
 foreach ($respuesta['rows'] as $i => $r){
+
+    $id= (int)$r['id_administrador'];
+
+    //ruta de acción directa con id normal
+    $editUrl = "/admin/administradores/editar/{$id}";
+    
     $acciones = '
         <div class="btn-group">
-            <a href="#" class="bg-info border-0 rounded-pill mr-2 btn-sm px-3">
+            <a href="'.$editUrl.'" class="bg-info border-0 rounded-pill mr-2 btn-sm px-3">
                 <i class="fas fa-pencil-alt text-white"></i>
             </a>
-            <a href="#" class="bg-danger border-0 rounded-pill mr-2 btn-sm px-3">
+            <button type="button" class="bg-danger border-0 rounded-pill mr-2 btn-sm px-3 btn-delete" data-id="'.$id.'">
                 <i class="fas fa-trash-alt text-white"></i>
-            </a>
+            </button>
         </div>
     ';
 

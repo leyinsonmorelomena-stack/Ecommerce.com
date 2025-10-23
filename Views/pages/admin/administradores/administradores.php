@@ -17,8 +17,27 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content-header -->
+
     <?php
-      include "modulos/listado.php";
+
+      if(!empty($arrayRutas[2])){
+
+        if(
+          $arrayRutas[2] == "listado" ||
+          $arrayRutas[2] == "creacion" ||
+          $arrayRutas[2] == "editar"
+        ){
+          include "modulos/".$arrayRutas[2].".php";
+        }
+        else{
+          echo '<script>
+              window.location= "'.$path.'404";
+            </script>';
+        }
+      }else{
+        include "modulos/listado.php";
+      }
+
     ?>
-    
+
   </div>
