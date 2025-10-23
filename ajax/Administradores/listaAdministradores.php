@@ -2,12 +2,39 @@
 
 declare(strict_types=1);
 header('Content_Type: application/json; charset=utf-8');
+// header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+// header('Pragma: no-cache');
 
 require_once __DIR__.'/../../Models/AdminsModel.php';
 
-// Parámetros Datatables
 
-$draw           = (int)($_GET['draw'] ?? 1);
+//iniciar sesión y validar
+if(session_status() !== PHP_SESSION_ACTIVE){
+    session_start();
+}
+
+// Parámetros Datatables
+$draw           = (int)($_GET['draw'] ?? 1); //Datatables espera este valor
+
+if(empty($_SESSION['id_admin'])){
+    if(session_status() === PHP_SESSION_ACTIVE){
+        $_SESSION = [];
+        session_destroy();
+    }
+
+    echo json_encode([
+        'draw'              => $draw,
+        'recordsTotal'      => 0,
+        'recordsFiltered'   => 0,
+        'error'             => 'No autenticado',
+        'logout'            => true,
+        'redirect'          => '/salir'
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
+
+
 $start          = (int)($_GET['start'] ?? 0);
 $length         = (int)($_GET['length'] ?? 10);
 $search         = $_GET['search']['value'] ?? '';
@@ -24,7 +51,7 @@ $respuesta = AdminsModel::getDataTable([
     'start'         => $start,
     'length'        => $length,
     'search'        => $search,
-    'orderCol'      => $orderCol,
+    'orderCol' => $orderCol,
     'orderDir'      => $orderDir
 ]);
 
@@ -55,6 +82,6 @@ foreach ($respuesta['rows'] as $i => $r){
 echo json_encode([
     'draw'              => $draw,
     'recordsTotal'      => $respuesta['total'],
-    'recordsFiltered'   => $respuesta['total'],
+    'recordsFiltered'   => $respuesta['filtered'],
     'data'              => $data,
 ], JSON_UNESCAPED_UNICODE);

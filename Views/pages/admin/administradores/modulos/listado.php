@@ -4,7 +4,9 @@
 
             <div class="card-header">
                 <h3 class="card-title text-white">
-                    <a href="#" class="btn btn-principal py-2 px-3 btn-sm rounded-pill text-reset"> <i class="fas fa-user-plus me-1"></i>Agregar Administrador</a>
+                    <a href="#" class="btn btn-principal py-2 px-3 btn-sm rounded-pill text-reset"> 
+                        <i class="fas fa-user-plus me-1"></i>Agregar Administrador
+                    </a>
                 </h3>
             </div>
 
@@ -35,16 +37,27 @@
 
 <script>
  $(document).ready(function(){
+
+    //evita el popup de warning de DataTable por respuestas AJAX personalizadas
+    $.fn.dataTable.ext.errMode = 'none';
+
     const tablaAdmins = $("#tablaAdmins").DataTable({
         processing:true,
         serverSide:true,
         ajax:{
             url: "<?=$path?>ajax/administradores/listaAdministradores.php",
-            type:"GET"
+            type:"GET",
+            dataSrc: function(json){
+                if(json && json.logout){
+                    window.location.href = json.redirect || '/salir';
+                    return [];
+                }
+                return json.data || [];
+            }
         },
         columns:[
             {data:0, className:"text-center"},
-            {data:1},
+            {data:1, className:"text-capitalize"},
             {data:2},
             {data:3, className:"text-center"},
             {data:4, className:"text-center"},
