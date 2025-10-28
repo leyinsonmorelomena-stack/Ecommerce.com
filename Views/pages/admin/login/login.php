@@ -1,3 +1,20 @@
+<style>
+#password-requisitos li {
+  margin-bottom: 4px;
+  color: #dc3545;
+  font-size: 0.9rem;
+}
+
+.progress {
+  height: 8px;
+  border-radius: 5px;
+}
+
+#password-strength-text {
+  transition: color 0.3s ease;
+}
+</style>
+
 <div class="login-page" style="min-height: 466px;">
 <div class="login-box">
   <!-- /.login-logo -->
@@ -53,6 +70,21 @@
           <div class="valid-feedback">Válido.</div>
             <div class="invalid-feedback">Campo inválido.</div>
           </div>
+
+          <ul id="password-requisitos" class="list-unstyled small mt-2">
+            <li>❌ Mínimo 8 caracteres</li>
+            <li>❌ Mínimo 1 mayúscula</li>
+            <li>❌ Mínimo 1 minúscula</li>
+            <li>❌ Mínimo 1 número</li>
+            <li>❌ Mínimo 1 carácter especial (@#!-*)</li>
+          </ul>
+
+          <div class="progress mt-2" style="height: 8px;">
+            <div id="password-strength-bar" class="progress-bar bg-danger" style="width: 0%;"></div>
+          </div>
+          <div id="password-strength-text" class="small mt-1 fw-bold">Débil</div>
+          <br>
+
 
         <div class="row">
           <div class="col-8">

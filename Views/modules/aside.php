@@ -1,29 +1,249 @@
+<style>
+/* =========================================================
+   SIDEBAR PROFESIONAL - DANLEY TECHNOLOGY
+   Combinado con interfaz blanca y azul corporativo
+   ========================================================= */
+
+:root {
+  --primary-blue: #007bff;
+  --hover-blue: #0d6efd;
+  --sidebar-bg: #f8f9fa;
+  --sidebar-border: #e9ecef;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --radius: 10px;
+  --transition: all 0.3s ease;
+  --font: "Poppins", "Segoe UI", sans-serif;
+}
+
+/* ----- SIDEBAR PRINCIPAL ----- */
+.main-sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--text-dark);
+  border-right: 1px solid var(--sidebar-border);
+  font-family: var(--font);
+  transition: var(--transition);
+}
+
+/* ----- LOGO ----- */
+.brand-link {
+  background: var(--sidebar-bg);
+  padding: 1.5rem 0.5rem;
+  border-bottom: 1px solid var(--sidebar-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-link img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+.brand-link img:hover {
+  transform: scale(1.05);
+}
+
+.brand-text {
+  color: var(--text-dark);
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.brand-text strong {
+  color: var(--primary-blue);
+}
+
+/* ----- PANEL DE USUARIO ----- */
+.user-panel {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--sidebar-border);
+  transition: var(--transition);
+}
+
+.user-panel:hover {
+  background-color: #f1f3f5;
+}
+
+.user-panel .image img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.user-panel .info a {
+  color: var(--text-dark);
+  font-weight: 500;
+  
+}
+
+.user-panel .info a:hover {
+  color: var(--primary-blue);
+}
+
+/* ----- BUSCADOR ----- */
+.form-control-sidebar {
+  background-color: #ffffff;
+  border: 1px solid var(--sidebar-border);
+  border-radius: var(--radius);
+  color: var(--text-dark);
+}
+
+.form-control-sidebar::placeholder {
+  color: var(--text-muted);
+}
+
+.btn-sidebar {
+  background-color: var(--primary-blue);
+  color: white;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  transition: var(--transition);
+}
+
+.btn-sidebar:hover {
+  background-color: var(--hover-blue);
+}
+
+/* ----- MENÚ PRINCIPAL ----- */
+.nav-sidebar > .nav-item > .nav-link {
+  color: var(--text-dark);
+  border-radius: var(--radius);
+  margin: 4px 10px;
+  transition: var(--transition);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.nav-sidebar > .nav-item > .nav-link i {
+  margin-right: 10px;
+  color: var(--primary-blue);
+  transition: var(--transition);
+}
+
+.nav-sidebar > .nav-item > .nav-link:hover {
+  background-color: rgba(0, 123, 255, 0.08);
+  color: var(--primary-blue);
+}
+
+.nav-sidebar > .nav-item > .nav-link.active {
+  background-color: var(--primary-blue);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25);
+}
+
+.nav-sidebar > .nav-item > .nav-link.active i {
+  color: white;
+}
+
+/* ----- SUBMENÚS ----- */
+.nav-treeview {
+  margin-left: 15px;
+  border-left: 2px solid var(--sidebar-border);
+  padding-left: 10px;
+}
+
+.nav-treeview .nav-item .nav-link {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.nav-treeview .nav-item .nav-link:hover {
+  color: var(--primary-blue);
+}
+
+.nav-treeview .nav-item .nav-link.active {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+/* ----- BADGES ----- */
+.badge-primary {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  padding: 3px 6px;
+}
+
+/* ----- BOTÓN CERRAR SESIÓN ----- */
+.nav-link.bg-primary {
+  background-color: var(--primary-blue) !important;
+  border-radius: var(--radius);
+  color: white !important;
+  transition: var(--transition);
+  text-align: center;
+  margin: 10px;
+}
+
+.nav-link.bg-primary:hover {
+  background-color: var(--hover-blue) !important;
+  transform: translateX(2px);
+}
+
+/* ----- SCROLLBAR PERSONALIZADO ----- */
+.main-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-sidebar::-webkit-scrollbar-thumb {
+  background-color: #cfd8dc;
+  border-radius: 5px;
+}
+
+.main-sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-blue);
+}
+
+</style>
+
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
   <!-- Brand Logo -->
-  <a href="Views/sources/adminlte/index3.html" class="brand-link">
-    <img src="<?=$path?>Views/sources/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">AdminLTE 3</span>
+  <a href="Views/sources/adminlte/index3.html" class="brand-link text-center d-flex flex-column align-items-center justify-content-center">
+    <img src="<?= $path ?>Views/sources/adminlte/dist/img/AdminLTELogo.png" 
+        alt="AdminLTE Logo" 
+        class="brand-image img-circle elevation-3 mb-2"
+        style="opacity: .9; width:70px; height:70px;">
+    <span class="brand-text font-weight-light mt-1">
+      DANLEY<br><strong>Technology</strong>
+    </span>
   </a>
+
 
   <!-- Sidebar -->
   <div class="sidebar">
 
-    <!-- Sidebar user (optional) -->
+    <!-- User Panel -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?=$path?>Views/sources/adminlte/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        <img src="<?= $path ?>Views/sources/adminlte/dist/img/user2-160x160.jpg" 
+             class="img-circle elevation-2" 
+             alt="User Image">
       </div>
       <div class="info">
-        <a href="#" class="d-block text-capitalize" ><?= $_SESSION['admin_nombre'];?></a>
+        <a href="#" class="d-block text-capitalize">
+          <?= $_SESSION['admin_nombre']; ?>
+        </a>
       </div>
     </div>
 
-    <!-- SidebarSearch Form -->
+    <!-- Search Form -->
     <div class="form-inline">
       <div class="input-group" data-widget="sidebar-search">
-        <input class="form-control form-control-sidebar"  type="search" placeholder="Search" aria-label="Search">
+        <input type="search" 
+               class="form-control form-control-sidebar" 
+               placeholder="Search" 
+               aria-label="Search">
         <div class="input-group-append">
           <button class="btn btn-sidebar">
             <i class="fas fa-search fa-fw"></i>
@@ -39,27 +259,28 @@
           role="menu" 
           data-accordion="false">
 
-          <!-- Administradores -->
+        <!-- Administradores -->
         <li class="nav-item">
-          <a href="/admin/administradores" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "administradores"):?> active <?php endif ?>">
+          <a href="/admin/administradores" 
+             class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'administradores') ? 'active' : '' ?>">
             <i class="nav-icon fas fa-user-shield"></i>
-            <p>
-              Administradores
-            </p>
+            <p>Administradores</p>
           </a>
+        </li>
 
         <!-- Dashboard -->
         <li class="nav-item">
-          <a href="/admin/dashboard" class="nav-link <?php if(empty ($arrayRutas[1]) ||!empty($arrayRutas[1]) && $arrayRutas[1] === "dashboard"):?> active <?php endif ?>">
+          <a href="/admin/dashboard" 
+             class="nav-link <?= (empty($arrayRutas[1]) || (!empty($arrayRutas[1]) && $arrayRutas[1] === 'dashboard')) ? 'active' : '' ?>">
             <i class="nav-icon fas fa-chart-line"></i>
-            <p>
-              Dashboard
-            </p>
+            <p>Dashboard</p>
           </a>
+        </li>
 
         <!-- Productos -->
         <li class="nav-item">
-          <a href="/admin/productos" class="nav-link <?php if(!empty($arrayRutas[1]) && in_array($arrayRutas[1],['categorias','subcategorias','inventario','mensajes'])):?> menu-open <?php endif ?>">
+          <a href="/admin/productos" 
+             class="nav-link <?= (!empty($arrayRutas[1]) && in_array($arrayRutas[1], ['categorias', 'subcategorias', 'inventario', 'mensajes'])) ? 'menu-open' : '' ?>">
             <i class="nav-icon fas fa-boxes"></i>
             <p>
               Productos
@@ -70,25 +291,29 @@
 
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/admin/categorias" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "categorias"):?> active <?php endif ?>">
+              <a href="/admin/categorias" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'categorias') ? 'active' : '' ?>">
                 <i class="fas fa-tags nav-icon"></i>
                 <p>Categorías</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/admin/subcategorias" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "subcategorias"):?> active <?php endif ?>">
+              <a href="/admin/subcategorias" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'subcategorias') ? 'active' : '' ?>">
                 <i class="fas fa-tag nav-icon"></i>
                 <p>Subcategorías</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/admin/inventario" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "inventario"):?> active <?php endif ?>">
+              <a href="/admin/inventario" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'inventario') ? 'active' : '' ?>">
                 <i class="fas fa-warehouse nav-icon"></i>
                 <p>Inventario</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/admin/mensajes" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "mensajes"):?> active <?php endif ?>">
+              <a href="/admin/mensajes" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'mensajes') ? 'active' : '' ?>">
                 <i class="fas fa-envelope nav-icon"></i>
                 <p>
                   Mensajes
@@ -99,9 +324,10 @@
           </ul>
         </li>
 
-         <!-- Ventas -->
+        <!-- Ventas -->
         <li class="nav-item">
-          <a href="/admin/ventas" class="nav-link <?php if(!empty($arrayRutas[1]) && in_array($arrayRutas[1],['pedidos','informes','disputas'])):?> menu-open <?php endif ?>">
+          <a href="/admin/ventas" 
+             class="nav-link <?= (!empty($arrayRutas[1]) && in_array($arrayRutas[1], ['pedidos', 'informes', 'disputas'])) ? 'menu-open' : '' ?>">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>
               Ventas
@@ -112,7 +338,8 @@
 
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/admin/pedidos" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "pedidos"):?> active <?php endif ?>">
+              <a href="/admin/pedidos" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'pedidos') ? 'active' : '' ?>">
                 <i class="fas fa-receipt nav-icon"></i>
                 <p>
                   Pedidos
@@ -121,13 +348,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="/admin/informes" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "informes"):?> active <?php endif ?>">
+              <a href="/admin/informes" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'informes') ? 'active' : '' ?>">
                 <i class="fas fa-file-invoice-dollar nav-icon"></i>
                 <p>Informes</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/admin/disputas" class="nav-link <?php if(!empty($arrayRutas[1]) && $arrayRutas[1] === "disputas"):?> active <?php endif ?>">
+              <a href="/admin/disputas" 
+                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'disputas') ? 'active' : '' ?>">
                 <i class="fas fa-exclamation-triangle nav-icon"></i>
                 <p>
                   Disputas
@@ -138,14 +367,13 @@
           </ul>
         </li>
 
-         <!-- Clientes -->
+        <!-- Clientes -->
         <li class="nav-item">
           <a href="/admin/clientes" class="nav-link">
             <i class="nav-icon fas fa-users"></i>
-            <p>
-              Clientes
-            </p>
+            <p>Clientes</p>
           </a>
+        </li>
 
         <!-- Cerrar sesión -->
         <li class="nav-item">
@@ -161,5 +389,4 @@
 
   </div>
   <!-- /.sidebar -->
-
 </aside>

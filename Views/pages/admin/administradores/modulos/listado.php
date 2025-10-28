@@ -57,9 +57,9 @@
         },
         columns:[
             {data:0, className:"text-center"},
-            {data:1, className:"text-capitalize"},
-            {data:2},
-            {data:3, className:"text-center"},
+            {data:1, className:"text-center text-capitalize"},
+            {data:2, className:"text-center"},
+            {data:3, className:"text-center text-capitalize"},
             {data:4, className:"text-center"},
             {data:5, orderable:false, searchable:false, className:"text-center"},
         ],
