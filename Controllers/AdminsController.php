@@ -2,39 +2,34 @@
 
 require_once "Models/AdminsModel.php";
 
-class AdminsController
-{
+class AdminsController{
     /*=================================
-                Login
+    Login
     =================================*/
-    public function login()
-    {
+    public function login(){
         $mensaje = "";
 
-        // Validamos variables POST
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+        //validamos variables post
+        if($_SERVER['REQUEST_METHOD']==='POST'){
             $email = filter_var(trim($_POST['emailAdmin'] ?? ''), FILTER_SANITIZE_EMAIL);
-            $password = trim($_POST['passwordAdmin'] ?? '');
+            $password = trim($_POST['passwordAdmin']);
 
-            // Validaciones básicas
-            if (empty($email) || empty($password)) {
+            //validaciones básicas
+            if(empty($email) || empty($password)){
                 return 'Por favor, completa todos los campos';
             }
 
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
                 return 'El formato del correo electrónico no es válido';
             }
 
-            // Validación de longitud mínima
-            if (strlen($password) < 8) {
+            if(strlen($password) < 8){
                 return 'La contraseña debe incluir al menos 8 caracteres';
             }
 
-            // Validación de complejidad
             $patron = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/';
 
-            if (!preg_match($patron, $password)) {
+            if(!preg_match($patron,$password)){
                 return 'La contraseña debe incluir mayúsculas, minúsculas, números y caracteres especiales';
             }
 
@@ -47,14 +42,14 @@ class AdminsController
             // echo '<pre>';print_r($admin);echo '</pre>';
             // return;
 
-             if(!$admin){
+            if(!$admin){
                 return 'Administrador no encontrado';
-             }
+            }
 
-            // Para cuando este la contraseña encriptada
-            //  if(!password_verify($password, $admin['password_administrador'])){
-            //     return 'Contraseña incorrecta'
-            //  }
+            //Para cuando esté la contraseña encriptada
+            // if(!password_verify($password, $admin['password_administrador'])){
+            //      return 'Contraseña incorrecta';
+            // }
 
             if($password !== $admin['password_administrador']){
                 return 'Contraseña incorrecta';
@@ -67,17 +62,17 @@ class AdminsController
             $_SESSION['admin_nombre'] = $admin['nombre_administrador'];
 
             echo '<script>location.reload();</script>';
+
         }
 
-        return $mensaje; // Vacío si no se ha enviado o no hubo errores
+        return $mensaje; //vacío si no se ha enviado o no hubo errores
     }
 
     /*=================================
-                Registrar
+    Registrar
     =================================*/
     public function registrar()
     {
-
         $mensaje = "";
 
         //solo procesar si viene por post
@@ -87,44 +82,45 @@ class AdminsController
 
         //opcional pero recomendado verificación CSRF
 
-        //1. Captura y sanitización
+        //1 Captura y sanitización
         $nombre = trim((string)($_POST['nombre_administrador'] ?? ''));
         $email = filter_var(trim((string)($_POST['email_administrador'] ?? '')), FILTER_SANITIZE_EMAIL);
         $password = trim((string)($_POST['password_administrador'] ?? ''));
         //$passwordConfirm = trim((string)($_POST['password_confirm_administrador'] ?? ''));
         $rol = trim((string)($_POST['rol_administrador'] ?? 'administrador'));
 
-        //2. Validaciones básicas
+        //2 validaciones básicas
         if(
             $nombre === ''||
             $email === '' ||
             $password === ''
             //|| $passwordConfirm === ''
         ){
-            return "Por favor, completa todos los campos obligatorios";
+            return 'Por favor, completa todos los campos obligatorios';
         }
 
-        //validar el formato email
+        //validar el formato de email
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
             return 'El formato del correo electrónico no es válido';
         }
 
-        //3. Reglas de contraseña
-        if(strlen($password) < 8){
-            return 'La contraseña debe tener al menos 8 caracteres';
-        }
+        //3) reglas de contraseña
+
+        // if(strlen($password) < 8){
+        //     return 'La contraseña debe tener al menos 8 caracteres';
+        // }
 
         // if($password !== $passwordConfirm){
         //     return 'Las contraseñas no coinciden';
         // }
 
-        $regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_])+$/';
+        $regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/';
 
         if(!preg_match($regex, $password)){
-            return 'La contraseña debe incluir mayúsculas, minúsculas, números y caracteres especiales';
+            return 'La contraseña debe incluir mayúsculas,minúsculas,números y caracteres especiales';
         }
 
-        //4. Normaliza/valida roles permitidos
+        //4) normaliza/valida roles permitidos
         $rolesPermitidos = ['administrador', 'editor', 'superadministrador'];
 
         if(!in_array($rol, $rolesPermitidos)){
@@ -137,13 +133,14 @@ class AdminsController
 
             //verificar email único
             $existe = $adminModel->findByEmail($email);
-            if($existe){
+            if($existe){ 
                 return 'El correo ya está registrado';
             }
 
-            // if($adminModel->findByEmail($email)){
-            //     return 'El correo ya está registrado'
+            // if($adminModel->findByEmail($email)){ 
+            //     return 'El correo ya está registrado';
             // }
+
 
             //otro hash seguro
             // $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -151,22 +148,34 @@ class AdminsController
             $opts = [
                 'memory_cost' => 1 << 17, //128mb
                 'time_cost' => 4,
-                'threads' => 2,
+                'threads'   => 2,
             ];
 
             $hash = password_hash($password, PASSWORD_ARGON2ID, $opts); // más seguro
 
             $idnuevo = $adminModel->create([
-
+                'nombre_administrador'    => $nombre,
+                'email_administrador'     => $email,
+                'password_administrador'  => $hash,
+                'is_active_administrador' => 1,
             ]);
 
 
+            if(!$idnuevo){
+                return 'No se pudo registrar el administrador. Intente nuevamente';
+            }
 
+            echo '
+                <script>
+                    formatearCamposFormulario();
+                    sweetAlert("Registro exitoso", "Administrador registrado exitosamente", "success", "/admin/administradores");
+                </script>
+            ';
 
         }catch(Throwable $e){
-            error_log('registrar admin'. $e->getMessage());
+            error_log('[registrar admin]'. $e->getMessage());
             return 'Ocurrió un error inesperado al registrar. Intenta nuevamente.';
-        }
+        }   
 
 
 

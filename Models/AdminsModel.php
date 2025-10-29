@@ -31,8 +31,7 @@ class AdminsModel{
 
 
     //Crear administrador
-    public static function create(array $data): ?int
-    {
+    public static function create(array $data): ?int{
         try{
             $pdo = Conexion::pdo();
 

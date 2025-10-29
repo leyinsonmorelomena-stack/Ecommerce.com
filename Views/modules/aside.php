@@ -12,7 +12,6 @@
   --text-dark: #212529;
   --text-muted: #6c757d;
   --radius: 10px;
-  --transition: all 0.3s ease;
   --font: "Poppins", "Segoe UI", sans-serif;
 }
 
@@ -116,7 +115,6 @@
   color: var(--text-dark);
   border-radius: var(--radius);
   margin: 4px 10px;
-  transition: var(--transition);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -125,7 +123,6 @@
 .nav-sidebar > .nav-item > .nav-link i {
   margin-right: 10px;
   color: var(--primary-blue);
-  transition: var(--transition);
 }
 
 .nav-sidebar > .nav-item > .nav-link:hover {
@@ -280,7 +277,7 @@
         <!-- Productos -->
         <li class="nav-item">
           <a href="/admin/productos" 
-             class="nav-link <?= (!empty($arrayRutas[1]) && in_array($arrayRutas[1], ['categorias', 'subcategorias', 'inventario', 'mensajes'])) ? 'menu-open' : '' ?>">
+             class="nav-link <?= (!empty($arrayRutas[1]) || in_array($arrayRutas[1], ['categorias', 'subcategorias', 'inventario', 'mensajes'])) ? 'menu-open' : '' ?>">
             <i class="nav-icon fas fa-boxes"></i>
             <p>
               Productos
@@ -292,28 +289,28 @@
           <ul class="nav nav-treeview">
             <li class="nav-item">
               <a href="/admin/categorias" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'categorias') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'categorias') ? 'active' : '' ?>">
                 <i class="fas fa-tags nav-icon"></i>
                 <p>Categorías</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/admin/subcategorias" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'subcategorias') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'subcategorias') ? 'active' : '' ?>">
                 <i class="fas fa-tag nav-icon"></i>
                 <p>Subcategorías</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/admin/inventario" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'inventario') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'inventario') ? 'active' : '' ?>">
                 <i class="fas fa-warehouse nav-icon"></i>
                 <p>Inventario</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/admin/mensajes" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'mensajes') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'mensajes') ? 'active' : '' ?>">
                 <i class="fas fa-envelope nav-icon"></i>
                 <p>
                   Mensajes
@@ -327,7 +324,7 @@
         <!-- Ventas -->
         <li class="nav-item">
           <a href="/admin/ventas" 
-             class="nav-link <?= (!empty($arrayRutas[1]) && in_array($arrayRutas[1], ['pedidos', 'informes', 'disputas'])) ? 'menu-open' : '' ?>">
+             class="nav-link <?= (!empty($arrayRutas[1]) || in_array($arrayRutas[1], ['pedidos', 'informes', 'disputas'])) ? 'menu-open' : '' ?>">
             <i class="nav-icon fas fa-shopping-cart"></i>
             <p>
               Ventas
@@ -339,7 +336,7 @@
           <ul class="nav nav-treeview">
             <li class="nav-item">
               <a href="/admin/pedidos" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'pedidos') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'pedidos') ? 'active' : '' ?>">
                 <i class="fas fa-receipt nav-icon"></i>
                 <p>
                   Pedidos
@@ -349,14 +346,14 @@
             </li>
             <li class="nav-item">
               <a href="/admin/informes" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'informes') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'informes') ? 'active' : '' ?>">
                 <i class="fas fa-file-invoice-dollar nav-icon"></i>
                 <p>Informes</p>
               </a>
             </li>
             <li class="nav-item">
               <a href="/admin/disputas" 
-                 class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'disputas') ? 'active' : '' ?>">
+                 class="nav-link <?= (!empty($arrayRutas[1]) || $arrayRutas[1] === 'disputas') ? 'active' : '' ?>">
                 <i class="fas fa-exclamation-triangle nav-icon"></i>
                 <p>
                   Disputas
@@ -369,7 +366,7 @@
 
         <!-- Clientes -->
         <li class="nav-item">
-          <a href="/admin/clientes" class="nav-link">
+          <a href="/admin/clientes" class="nav-link <?= (!empty($arrayRutas[1]) && $arrayRutas[1] === 'clientes') ? 'active' : '' ?>">
             <i class="nav-icon fas fa-users"></i>
             <p>Clientes</p>
           </a>

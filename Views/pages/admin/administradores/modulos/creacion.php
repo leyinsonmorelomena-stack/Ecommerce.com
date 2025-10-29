@@ -123,7 +123,7 @@
 
                         <script>
                             formatearCamposFormulario();
-                            sweetAlert("Atención", "'.$mensaje.'","primary");
+                            sweetAlert("Atención", "'.$mensaje.'","warning");
                         </script>
 
                         ';
