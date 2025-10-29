@@ -29,6 +29,68 @@ class AdminsModel{
         }
     }
 
+
+    //Crear administrador
+    public static function create(array $data): ?int
+    {
+        try{
+            $pdo = Conexion::pdo();
+
+            //Normalizacion y defaults
+            $nombre = trim((string)($data['nombre_administrador'] ?? ''));
+            $email = trim(mb_strtolower((string)($data['email_administrador'] ?? '')));
+            $password = trim((string)($data['password_administrador'] ?? ''));
+            //$passwordConfirm = trim((string)($_POST['password_confirm_administrador'] ?? ''));
+            $rol = trim((string)($data['rol_administrador'] ?? 'administrador'));
+            $isActive = (int)($data['is_active'] ?? 1);
+
+
+            if($nombre === '' || $email === '' || $password === ''){
+                return null;
+            }
+
+            $sql = "INSERT INTO administradores
+                    (
+                        nombre_administrador,
+                        email_administrador,
+                        password_administrador,
+                        rol_administrador,
+                        is_active_administrador
+                    ) VALUES
+                    (
+                        :nombre,
+                        :email,
+                        :password,
+                        :rol,
+                        :is_active
+                    )";
+
+                    $stmt = $pdo->prepare($sql);
+                    $stmt->bindValue(':nombre',      $nombre, PDO::PARAM_STR);
+                    $stmt->bindValue(':email',       $email, PDO::PARAM_STR);
+                    $stmt->bindValue(':password',    $password, PDO::PARAM_STR);
+                    $stmt->bindValue(':rol',         $rol, PDO::PARAM_STR);
+                    $stmt->bindValue(':is_active',   $isActive, PDO::PARAM_INT);
+
+                if(!$stmt->execute()){
+                    return null;
+                }
+
+                $id = (int)$pdo->lastInsertId();
+                return $id > 0 ? $id : null;
+
+        }catch(PDOException $e){
+            if((int)$e->getCode() === 23000){
+                error_log("AdminsModel::create: - Email duplicado: {$email}");
+            }else{
+                error_log("Error en AdminModel::create: " . $e->getMessage());
+            }
+
+            return null;
+        }
+    }
+
+
     //datatable
     public static function getDataTable(array $params): array{
         $pdo = Conexion::pdo();
@@ -68,7 +130,12 @@ class AdminsModel{
         $filtered = (int)$stmtCount->fetchColumn();
 
         // consulta
-        $sql = "SELECT id_administrador, nombre_administrador, email_administrador, rol_administrador, ultimo_login_administrador FROM administradores $where ORDER BY $orderCol $orderDir LIMIT $start, $length";
+        $sql = "SELECT id_administrador, 
+                       nombre_administrador, 
+                       email_administrador, 
+                       rol_administrador, 
+                       ultimo_login_administrador 
+        FROM administradores $where ORDER BY $orderCol $orderDir LIMIT $start, $length";
 
         $stmt = $pdo->prepare($sql);
         foreach ($bind as $k => $v) $stmt->bindValue($k, $v, PDO::PARAM_STR);

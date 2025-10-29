@@ -2,6 +2,7 @@
     <div class="container">
         <div class="card">
             <form class="needs-validations" method="post" novalidate>
+
                 <div class="card-header">
                     <div class="container">
                         <div class="row">
@@ -36,11 +37,18 @@
                             <div class="card">
                                 <div class="card-body">
 
+                                    <!-- NOMBRE -->
                                     <div class="form-group pb-3">
                                         <label for="nombre_administrador">Nombre <sup class="text-danger font-weight-bold">*</sup> </label>
-                                        <input type="text" name="nombre_administrador" id="nombre_administrador" 
-                                        placeholder= "Ingresa tu nombre"
-                                        class="form-control" required>
+                                        <input 
+                                            type="text" 
+                                            name="nombre_administrador" 
+                                            id="nombre_administrador" 
+                                            placeholder= "Ingresa tu nombre"
+                                            class="form-control"
+                                            onchange="validarJs(event, 'texto')"
+                                            onblur="validarJs(event, 'texto')"
+                                            required>
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
                                     </div>
@@ -65,19 +73,34 @@
                             <div class="card">
                                 <div class="card-body">
 
+                                    <!-- EMAIL -->
                                     <div class="form-group pb-3">
                                         <label for="email_administrador">Email <sup class="text-danger font-weight-bold">*</sup> </label>
-                                        <input type="email" name="email_administrador" id="email_administrador" 
-                                        placeholder= "example@email.com"
-                                        class="form-control" required>
+                                        <input 
+                                            type="email"
+                                            name="email_administrador"
+                                            id="email_administrador"
+                                            placeholder= "example@email.com"
+                                            class="form-control"
+                                            onchange="validarJs(event, 'texto')"
+                                            onblur="validarJs(event, 'texto')"
+                                            required>
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
                                     </div>
 
+                                    <!-- PASSWORD -->
                                     <div class="form-group pb-3">
                                         <label for="password_administrador">Password <sup class="text-danger font-weight-bold">*</sup> </label>
-                                        <input type="password" name="password_administrador" id="password_administrador" 
-                                        placeholder= "Ingresa contraseña" class="form-control" required>
+                                        <input 
+                                            type="password" 
+                                            name="password_administrador" 
+                                            id="password_administrador" 
+                                            placeholder= "Ingresa contraseña" 
+                                            class="form-control" 
+                                            onchange="validarJs(event, 'texto')"
+                                            onblur="validarJs(event, 'texto')"
+                                            required>
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
                                     </div>
@@ -88,6 +111,25 @@
 
                     </div>
                 </div>
+
+                <?php
+                    //logica para el registro 
+                    require_once "Controllers/AdminsController.php";
+                    $controller = new AdminsController();
+                    $mensaje = $controller->registrar();
+
+                    if(!empty($mensaje)){
+                        echo '<div class="alert alert-primary text-center bt-3" role="alert">'.$mensaje.'</div>
+
+                        <script>
+                            formatearCamposFormulario();
+                            sweetAlert("Atención", "'.$mensaje.'","primary");
+                        </script>
+
+                        ';
+                    }
+                    
+                ?>
 
                 <div class="card-footer">
                     <div class="container">

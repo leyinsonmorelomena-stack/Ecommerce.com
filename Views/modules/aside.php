@@ -137,7 +137,7 @@
   background-color: var(--primary-blue);
   color: white;
   font-weight: 600;
-  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 2px 6px rgba(13, 13, 14, 0.25);
 }
 
 .nav-sidebar > .nav-item > .nav-link.active i {
@@ -210,8 +210,8 @@
 
   <!-- Brand Logo -->
   <a href="Views/sources/adminlte/index3.html" class="brand-link text-center d-flex flex-column align-items-center justify-content-center">
-    <img src="<?= $path ?>Views/sources/adminlte/dist/img/AdminLTELogo.png" 
-        alt="AdminLTE Logo" 
+    <img src="<?= $path ?>Views/sources/adminlte/dist/img/credit/DANLEYTechnologyLogo.png" 
+        alt="DANLEY Technology Logo" 
         class="brand-image img-circle elevation-3 mb-2"
         style="opacity: .9; width:70px; height:70px;">
     <span class="brand-text font-weight-light mt-1">

@@ -32,11 +32,11 @@
         //mostrar mensaje de error si existe
         if(!empty($mensaje)){
           echo '
-          <div class="alert alert-warning text-center md-3" role="alert">'.$mensaje.'</div>
+          <div class="alert alert-primary text-center md-3" role="alert">'.$mensaje.'</div>
           
               <script>
                   formatearCamposFomulario();
-                  sweetAlert("Atención","'.$mensaje.'","warning");
+                  sweetAlert("Atención","'.$mensaje.'","primary");
               </script>
           ';
         }
