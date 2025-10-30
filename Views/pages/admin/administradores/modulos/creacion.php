@@ -1,8 +1,10 @@
 <div class="content">
     <div class="container">
         <div class="card">
+
             <form class="needs-validations" method="post" novalidate>
 
+                <!-- Card-header -->
                 <div class="card-header">
                     <div class="container">
                         <div class="row">
@@ -30,6 +32,7 @@
                     </div>
                 </div>
 
+                <!-- card-body -->
                 <div class="card-body">
                     <div class="row row-cols-1 row-cols-md-2">
                         <!-- bloque izquierdo -->
@@ -37,7 +40,7 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <!-- NOMBRE -->
+                                    <!-- Nombre -->
                                     <div class="form-group pb-3">
                                         <label for="nombre_administrador">Nombre <sup class="text-danger font-weight-bold">*</sup> </label>
                                         <input 
@@ -45,14 +48,15 @@
                                             name="nombre_administrador" 
                                             id="nombre_administrador" 
                                             placeholder= "Ingresa tu nombre"
-                                            class="form-control"
+                                            class="form-control" 
                                             onchange="validarJs(event, 'texto')"
-                                            onblur="validarJs(event, 'texto')"
+                                            onblur="validarJs(event,'texto')"
                                             required>
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
                                     </div>
 
+                                    <!-- Rol -->
                                     <div class="form-group pb-3">
                                         <label for="rol_administrador">Rol <sup class="text-danger font-weight-bold">*</sup> </label>
                                         <select name="rol_administrador" id="rol_administrador" class="form-control" required>
@@ -73,23 +77,24 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <!-- EMAIL -->
+                                    <!-- Email -->
                                     <div class="form-group pb-3">
                                         <label for="email_administrador">Email <sup class="text-danger font-weight-bold">*</sup> </label>
                                         <input 
-                                            type="email"
-                                            name="email_administrador"
-                                            id="email_administrador"
+                                            type="email" 
+                                            name="email_administrador" 
+                                            id="email_administrador" 
                                             placeholder= "example@email.com"
                                             class="form-control"
-                                            onchange="validarJs(event, 'texto')"
-                                            onblur="validarJs(event, 'texto')"
-                                            required>
+                                            onchange="validarJs(event, 'email')"
+                                            onblur="validarJs(event,'email')"
+                                            required
+                                        >
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
                                     </div>
 
-                                    <!-- PASSWORD -->
+                                    <!-- Password -->
                                     <div class="form-group pb-3">
                                         <label for="password_administrador">Password <sup class="text-danger font-weight-bold">*</sup> </label>
                                         <input 
@@ -98,8 +103,8 @@
                                             id="password_administrador" 
                                             placeholder= "Ingresa contraseña" 
                                             class="form-control" 
-                                            onchange="validarJs(event, 'texto')"
-                                            onblur="validarJs(event, 'texto')"
+                                            onchange="validarJs(event, 'password')"
+                                            onblur="validarJs(event,'password')"
                                             required>
                                         <div class="valid-feedback">Válido</div>
                                         <div class="invalid-feedback">Por favor llene este campo correctamente</div>
@@ -112,14 +117,16 @@
                     </div>
                 </div>
 
+                
+
                 <?php
-                    //logica para el registro 
+                    //logica para el registro
                     require_once "Controllers/AdminsController.php";
                     $controller = new AdminsController();
                     $mensaje = $controller->registrar();
 
                     if(!empty($mensaje)){
-                        echo '<div class="alert alert-primary text-center bt-3" role="alert">'.$mensaje.'</div>
+                        echo '<div class="alert alert-primary text-center bt-3 mx-3" role="alert">'.$mensaje.'</div>
 
                         <script>
                             formatearCamposFormulario();
@@ -128,9 +135,9 @@
 
                         ';
                     }
-                    
                 ?>
 
+                <!-- card-footer -->
                 <div class="card-footer">
                     <div class="container">
                         <div class="row">

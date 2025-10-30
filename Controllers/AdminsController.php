@@ -3,6 +3,7 @@
 require_once "Models/AdminsModel.php";
 
 class AdminsController{
+
     /*=================================
     Login
     =================================*/
@@ -47,13 +48,15 @@ class AdminsController{
             }
 
             //Para cuando esté la contraseña encriptada
-            // if(!password_verify($password, $admin['password_administrador'])){
-            //      return 'Contraseña incorrecta';
+            if(!password_verify($password, $admin['password_administrador'])){
+                 return 'Contraseña incorrecta';
+            }
+
+            // if($password !== $admin['password_administrador']){
+            //     return 'Contraseña incorrecta';
             // }
 
-            if($password !== $admin['password_administrador']){
-                return 'Contraseña incorrecta';
-            }
+            AdminsModel::updateLastLogin((int)$admin['id_administrador']);
 
             $_SESSION['admin']= "ok";
 
@@ -180,4 +183,95 @@ class AdminsController{
 
 
     }
+
+/*=================================
+Obtener datos de un administrador por ID
+=================================*/
+public function show(int $id): ?array
+{
+    $adminModel = new AdminsModel();
+    $admin = $adminModel->findById($id); // Necesitamos crear este método en el modelo
+    return $admin ?: null;
+}
+
+/*=================================
+Actualizar administrador
+=================================*/
+public function actualizar(int $id_admin)
+{
+    $mensaje = "";
+
+    if(($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'POST'){
+        return $mensaje;
+    }
+
+    $nombre = trim((string)($_POST['nombre_administrador'] ?? ''));
+    $email = filter_var(trim((string)($_POST['email_administrador'] ?? '')), FILTER_SANITIZE_EMAIL);
+    $password = trim((string)($_POST['password_administrador'] ?? ''));
+    $rol = trim((string)($_POST['rol_administrador'] ?? 'administrador'));
+
+    if($nombre === '' || $email === ''){
+        return 'Por favor, completa todos los campos obligatorios';
+    }
+
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        return 'El formato del correo electrónico no es válido';
+    }
+
+    $rolesPermitidos = ['administrador', 'editor', 'superadministrador'];
+    if(!in_array($rol, $rolesPermitidos)){
+        $rol = 'administrador';
+    }
+
+    try {
+        $adminModel = new AdminsModel();
+        $adminExistente = $adminModel->findByEmail($email);
+
+        // Si el email existe y no es del mismo admin, error
+        if($adminExistente && (int)$adminExistente['id_administrador'] !== $id_admin){
+            return 'El correo ya está registrado';
+        }
+
+        $datosActualizar = [
+            'nombre_administrador' => $nombre,
+            'email_administrador'  => $email,
+            'rol_administrador'    => $rol,
+        ];
+
+        // Actualiza la contraseña solo si se ingresó nueva
+        if($password !== ''){
+            $regex = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/';
+            if(!preg_match($regex, $password)){
+                return 'La contraseña debe incluir mayúsculas, minúsculas, números y caracteres especiales';
+            }
+
+            $opts = [
+                'memory_cost' => 1 << 17, //128mb
+                'time_cost' => 4,
+                'threads'   => 2,
+            ];
+
+            $datosActualizar['password_administrador'] = password_hash($password, PASSWORD_ARGON2ID, $opts);
+        }
+
+        $actualizado = $adminModel->update($id_admin, $datosActualizar); // método update en el modelo
+
+        if(!$actualizado){
+            return 'No se pudo actualizar el administrador. Intenta nuevamente';
+        }
+
+        echo '
+            <script>
+                formatearCamposFormulario();
+                sweetAlert("Actualización exitosa", "Administrador actualizado correctamente", "success", "/admin/administradores");
+            </script>
+        ';
+
+    } catch(Throwable $e){
+        error_log('[actualizar admin]'. $e->getMessage());
+        return 'Ocurrió un error inesperado al actualizar. Intenta nuevamente.';
+    }
+}
+
+
 }

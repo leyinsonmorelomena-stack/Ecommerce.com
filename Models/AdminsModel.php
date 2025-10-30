@@ -29,9 +29,9 @@ class AdminsModel{
         }
     }
 
-
     //Crear administrador
-    public static function create(array $data): ?int{
+    public static function create(array $data): ?int
+    {
         try{
             $pdo = Conexion::pdo();
 
@@ -89,6 +89,31 @@ class AdminsModel{
         }
     }
 
+    // Obtener administrador por ID
+public static function findById(int $id): ?array
+{
+    $sql = "SELECT 
+                id_administrador,
+                nombre_administrador,
+                email_administrador,
+                rol_administrador,
+                password_administrador
+            FROM administradores
+            WHERE id_administrador = :id
+            LIMIT 1";
+
+    try {
+        $stmt = Conexion::pdo()->prepare($sql);
+        $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        $admin = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $admin ?: null;
+    } catch(PDOException $e) {
+        error_log("AdminsModel::findById error: " . $e->getMessage());
+        return null;
+    }
+}
+
 
     //datatable
     public static function getDataTable(array $params): array{
@@ -129,12 +154,7 @@ class AdminsModel{
         $filtered = (int)$stmtCount->fetchColumn();
 
         // consulta
-        $sql = "SELECT id_administrador, 
-                       nombre_administrador, 
-                       email_administrador, 
-                       rol_administrador, 
-                       ultimo_login_administrador 
-        FROM administradores $where ORDER BY $orderCol $orderDir LIMIT $start, $length";
+        $sql = "SELECT id_administrador, nombre_administrador, email_administrador, rol_administrador, ultimo_login_administrador FROM administradores $where ORDER BY $orderCol $orderDir LIMIT $start, $length";
 
         $stmt = $pdo->prepare($sql);
         foreach ($bind as $k => $v) $stmt->bindValue($k, $v, PDO::PARAM_STR);
@@ -148,4 +168,79 @@ class AdminsModel{
         ];
 
     }
+
+    //Actualizar el último login
+    public static function updateLastLogin(int $id):bool
+    {
+        try{
+
+            $sql = "UPDATE administradores 
+                    SET ultimo_login_administrador = :now
+                    WHERE id_administrador = :id
+                    ";
+
+            $pdo = Conexion::pdo();
+            $stmt = $pdo->prepare($sql);
+
+            //generar la marca de tiempo actual
+            $now = date('Y-m-d H:i:s');
+
+            //vincular parámetros
+            $stmt->bindValue(':now', $now, PDO::PARAM_STR);
+            $stmt->bindValue(':id', $id, PDO::PARAM_STR);
+
+            //ejecutar y devolver true si tuvo éxito
+            return $stmt->execute();
+
+        }catch(PDOException $e){
+            error_log("error en updateLastLogin: " . $e->getMessage());
+            return false;
+        }
+    }
+
+    //Actualizar administrador
+public static function update(int $id, array $data): bool
+{
+    $fields = [];
+    $bind = [':id' => $id];
+
+    if(isset($data['nombre_administrador'])){
+        $fields[] = "nombre_administrador = :nombre";
+        $bind[':nombre'] = $data['nombre_administrador'];
+    }
+
+    if(isset($data['email_administrador'])){
+        $fields[] = "email_administrador = :email";
+        $bind[':email'] = $data['email_administrador'];
+    }
+
+    if(isset($data['rol_administrador'])){
+        $fields[] = "rol_administrador = :rol";
+        $bind[':rol'] = $data['rol_administrador'];
+    }
+
+    if(isset($data['password_administrador'])){
+        $fields[] = "password_administrador = :password";
+        $bind[':password'] = $data['password_administrador'];
+    }
+
+    if(empty($fields)){
+        return false; // no hay datos para actualizar
+    }
+
+    $sql = "UPDATE administradores SET " . implode(', ', $fields) . " WHERE id_administrador = :id";
+
+    try{
+        $stmt = Conexion::pdo()->prepare($sql);
+        foreach($bind as $param => $value){
+            $stmt->bindValue($param, $value, PDO::PARAM_STR);
+        }
+        return $stmt->execute();
+    }catch(PDOException $e){
+        error_log("AdminsModel::update error: " . $e->getMessage());
+        return false;
+    }
+}
+
+
 }

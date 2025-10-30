@@ -1,71 +1,45 @@
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 262
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:13:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 369
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 262
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:13:57 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 369
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:14:37 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:14:45 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:14:48 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:14:51 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:15:52 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 280
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 327
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:16:22 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 280
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 292
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 299
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 306
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 313
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 327
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 339
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 349
-[29-Oct-2025 21:16:36 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\ecommerce\Views\modules\aside.php on line 356
+[30-Oct-2025 21:59:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method AdminsController::adminModel() in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php:9
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\administradores.php(30): include()
+#1 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(20): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Views\template.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ecommerce\index.php(27): TemplateController->showTemplate()
+#5 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php on line 9
+[30-Oct-2025 21:59:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method AdminsController::adminModel() in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php:9
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\administradores.php(30): include()
+#1 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(20): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Views\template.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ecommerce\index.php(27): TemplateController->showTemplate()
+#5 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php on line 9
+[30-Oct-2025 22:00:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method AdminsController::adminModel() in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php:9
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\administradores.php(30): include()
+#1 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(20): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Views\template.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ecommerce\index.php(27): TemplateController->showTemplate()
+#5 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php on line 9
+[30-Oct-2025 22:10:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method AdminsController::obtenerPorId() in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php:9
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\administradores.php(30): include()
+#1 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(20): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Views\template.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ecommerce\index.php(27): TemplateController->showTemplate()
+#5 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php on line 9
+[30-Oct-2025 22:36:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method AdminsController::obtenerPorId() in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php:9
+Stack trace:
+#0 C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\administradores.php(30): include()
+#1 C:\xampp\htdocs\ecommerce\Views\pages\admin\admin.php(20): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ecommerce\Views\template.php(103): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\ecommerce\Controllers\TemplateController.php(6): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\ecommerce\index.php(27): TemplateController->showTemplate()
+#5 {main}
+  thrown in C:\xampp\htdocs\ecommerce\Views\pages\admin\administradores\modulos\editar.php on line 9
